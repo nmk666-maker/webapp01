@@ -6,6 +6,7 @@ const __dirname = path.resolve();
 
 // Initialize the Express application
 const app = express ();
+app.use(express.static('public'));
 
 // Define the port number for the server to listen on
 const port = parseInt (process.env.PORT) || 8080;
@@ -16,7 +17,7 @@ app.get('/', (req, res) => {
  });
 
 // send HTML file to web browser for the URL ('/index)
-app.get('/index', function(req, res) {
+app.get('/index', function (req, res) {
         res.sendFile(path.join(__dirname, '/index.html'));
     });
 

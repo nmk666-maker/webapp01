@@ -1,0 +1,19 @@
+{
+  "name": "myfirst-webapp",
+  "description": "My first web app",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Nathalie",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}

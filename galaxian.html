@@ -15,7 +15,7 @@
   <div class="wrap">
     <canvas id="game" width="480" height="640"></canvas>
   </div>
-  <div class="hint">Pil ←/→ • SPACE skyter • R restart • 7 liv • Fiender skyter & dykker • Sprites-basert grafikk</div>
+  <div class="hint">Pil ←/→ • SPACE skyter • R restart • 5 liv • Fiender skyter & dykker • Sprites-basert grafikk</div>
 
   <script>
   // --- Galaxian-inspirert med sprites (pixel-art tegnet fra matriser) ---
@@ -95,7 +95,7 @@
   function spriteForRow(r){ return r===0?SPR_ENEMY_R : (r<3?SPR_ENEMY_Y:SPR_ENEMY_G); }
 
   // --- Spilltilstand ------------------------------------------------------
-  let score=0, wave=1, lives=7; let gameOver=false, youWin=false;
+  let score=0, wave=2, lives=5; let gameOver=false, youWin=false;
   const player={ x:W/2, y:H-56, w:32, h:32, speed:7.0, cooldown:1, invuln:0 };
   const shots=[], enemyShots=[], particles=[];
 

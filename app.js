@@ -17,8 +17,8 @@ app.get('/', (req, res) => {
  });
 
 // send HTML file to web browser for the URL ('/galaxian)
-app.get('/galaxian', function (req, res) {
-        res.sendFile(path.join(__dirname, '/galaxian.html'));
+app.get('/calculator', function (req, res) {
+        res.sendFile(path.join(__dirname, '/calculator.html'));
     });
 
  //start the server and have it listen on the defined port
